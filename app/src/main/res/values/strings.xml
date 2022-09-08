@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RoomDatabase</string>
+    <string name="record_saved">Record saved successfully</string>
+    <string name="clear_record">Clear Record</string>
+</resources>
