@@ -17,10 +17,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.tv.setOnClickListener {
             startService(Intent(this, ForegroundService::class.java))
 
-        }
+
         val intentFilter = IntentFilter(Intent.ACTION_BATTERY_CHANGED)
         registerReceiver(broadcastReceiver, intentFilter)
 

@@ -28,7 +28,7 @@ class ForegroundService : Service() {
         input = intent?.getStringExtra("inputExtra") ?: "N/A"
         createNotificationChannel()
         val notificationIntent = Intent(this, MainActivity::class.java)
-         pendingIntent = PendingIntent.getActivity(this, 0, notificationIntent, 0
+         pendingIntent = PendingIntent.getActivity(this, 0, notificationIntent, PendingIntent.FLAG_IMMUTABLE
         )
 
         setNotification(input ?: "M/A", pendingIntent!! , "Changing Service Notification")

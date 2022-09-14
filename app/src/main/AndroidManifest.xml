@@ -7,34 +7,21 @@
 
 
     <application
-        android:name="com.example.BroadcastingAndRoomDatabase.global.RoomDatabase"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RoomDatabase">
-        <activity
-            android:name="com.example.BroadcastingAndRoomDatabase.UserDetail"
-            android:exported="false" />
-        <activity
-            android:name="com.example.BroadcastingAndRoomDatabase.Main"
-            android:exported="true">
-             <intent-filter>
-                 <action android:name="android.intent.action.MAIN" />
 
-                 <category android:name="android.intent.category.LAUNCHER" />
-             </intent-filter>
-
-        </activity>
         <activity
             android:name="com.example.BroadcastingAndRoomDatabase.MainActivity"
-            android:exported="false">
-            <!--<intent-filter>
+            android:exported="true">
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
+            </intent-filter>
         </activity>
 
         <receiver
